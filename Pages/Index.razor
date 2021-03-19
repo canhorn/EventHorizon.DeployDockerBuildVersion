@@ -1,0 +1,15 @@
+@page "/"
+@using Microsoft.Extensions.Configuration
+
+<h1>Hello, Version!</h1>
+
+<h2>
+    Application Version: @Configuration["APPLICATION_VERSION"]
+</h2>
+
+@code {
+    [Inject]
+    public IConfiguration Configuration { get; set; } = null!;
+    
+    
+}
